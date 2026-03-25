@@ -1,0 +1,163 @@
+/* =========================================
+   2. VARIABLES DEL SISTEMA (DESIGN TOKENS)
+   ========================================= */
+:root {
+    /* Colores */
+    --color-fondo: #0B0E14;
+    --color-fondo2: #fdfdfd;
+    --color-acento: #fb2c36;
+    --color-acento-glow: rgba(0, 212, 255, 0.3);
+    --color-superficie: #f1e1e0;
+    --color-hover: #f6928b;
+    /*--texto-principal: #F0F4F8;*/
+    --texto-secundario: #7487a0;
+
+    /* Tipografía */
+
+
+    /* Espaciado y Bordes */
+    --gap-seccion: 4rem;
+    --radio-border: 8px;
+    --transition-fast: 0.3s ease;
+}
+
+/* =========================================
+   3. RESET Y ESTILOS BASE
+   ========================================= */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: var(--color-superficie);
+    color: var(--texto-principal);
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita scrolls horizontales accidentales */
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*ESTILOS DEL HEADER*/
+
+header {
+    background-color: var(--color-fondo2);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--texto-secundario);
+}
+
+header .logo{
+    background-color: var(--color-acento);
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-family: "Geist", sans-serif;
+}
+
+header .container-menu-cart{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .cart-btn, .menu-btn, .close-btn{
+    border: none;
+    background-color: transparent;
+}
+
+header .cart-btn .bi-cart, .menu-btn .bi-list, .close-btn{
+    font-size: 1.2rem;
+}
+
+header .menu-btn, .cart-btn, .close-btn{
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+header .menu-btn:hover, .cart-btn:hover, .close-btn:hover{
+    background-color: var(--color-hover);
+}
+
+
+/*SECCION MENU MOBILE*/
+
+.mobile-container{
+    display: none;
+}
+
+.menu-mobile-container{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-fondo2);
+}
+
+.close-btn{
+    margin-bottom: 20px;
+    margin-left: 95%;
+}
+
+.menu-active{
+    display: flex;
+}
+
+.list-categorias a{
+    display: block;
+    font-family: "Geist", sans-serif;
+    color: var(--texto-secundario);
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.list-categorias a:hover{
+    color: var(--color-fondo);
+}
+
+#search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#search-input:focus {
+    border-color: var(--color-hover);
+}

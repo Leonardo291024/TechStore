@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>TechStore</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">TS</h1>
+        <div class="container-menu-cart">
+            <button id="open-cart" class="cart-btn">
+                <i class="bi bi-cart"></i> (<span id="cart-count">0</span>)
+            </button>
+            <button class="menu-btn" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="mobile-container" id="menu-mobile">
+        <div class="menu-mobile-container">
+            <button class="close-btn" id="close-btn">
+                <i class="bi bi-x"></i>
+            </button>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar celulares, consolas, audífonos...">
+            </div>
+            <div class="list-categorias">
+                <a href="">telefonos inteligentes</a>
+                <a href="">portatiles</a>
+                <a href="">Accesorios</a>
+                <a href="">Audio</a>
+                <a href="">Juego de azar</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/acciones.js"></script>
+</body>
+</html>
