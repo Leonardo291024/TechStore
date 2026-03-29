@@ -252,19 +252,60 @@ main{
     margin-bottom: 20px;
 }
 
-.container-categorias .categorias .categoria{
+.container-categorias .categorias-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-categorias .categoria1{
     background-image: url(../images/images-categorias/phone-categia.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
-    width: 260px;
-    height: 220px;
-    padding: 10px;
+.container-categorias .categoria2{
+    background-image: url(../images/images-categorias/laptop-categora.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-categorias .categoria3{
+    background-image: url(../images/images-categorias/accesorio-categorias.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-categorias .categoria4{
+    background-image: url(../images/images-categorias/audio-categorias.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-categorias .container-categoria{
+    position: relative;
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-categoria .categoria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .5);
 
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .categorias .categoria p:nth-child(1){
@@ -274,7 +315,35 @@ main{
     font-size: 1.3rem;
 }
 
+.categorias .categoria p:nth-child(2){
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    color: var(--color-superficie);
+    font-size: 0.8rem;
+}
 
+/*PRODUCTOS DESTACADOS*/
+
+.container-productos-destacados{
+    margin-top: 80px;
+}
+
+.container-productos-destacados .destacados-title{
+    font-family: "Geist", sans-serif;
+}
+
+.destacados-title h2{
+    font-size: 2rem;
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.destacados-title p{
+    font-family: "Geist", sans-serif;
+    color: var(--texto-secundario);
+    margin-bottom: 20px;
+}
 
 /*VERSION DESKTOP*/
 
