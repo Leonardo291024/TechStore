@@ -16,4 +16,4 @@
 
 **El diseño utiliza una paleta de colores limpia con coral/salmon como color principal, lo que le confiere un aspecto moderno y profesional. Todo el diseño es totalmente adaptable para funcionar correctamente tanto en dispositivos moviles como ordenadores.**
 
-[](./images/imagenReadmeTechStore.png)
+![portada](./images/imagenReadmeTechStore.png)
