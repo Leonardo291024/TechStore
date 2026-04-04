@@ -40,6 +40,7 @@ body {
     color: var(--texto-principal);
     line-height: 1.6;
     overflow-x: hidden; /* Evita scrolls horizontales accidentales */
+    padding-top: 80px;
 }
 
 h1, h2, h3 {
@@ -81,6 +82,12 @@ header .nav-desktop{
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
     background-color: var(--color-fondo2);
     padding: 1rem;
     display: flex;
@@ -132,6 +139,11 @@ header .menu-btn:hover, .cart-btn:hover, .close-btn:hover, .perfil-btn:hover{
 
 .mobile-container{
     display: none;
+
+    top: 68px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000
 }
 
 .menu-mobile-container{
@@ -513,6 +525,113 @@ main{
     font-size: 1rem;
     font-weight: 400;
     color: var(--texto-secundario);
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--color-fondo);
+    padding: 20px;
+    font-family: "Geist", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-div1 .footer-logo{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h1{
+    color: var(--color-fondo2);
+    background-color: var(--color-acento);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+
+.footer-logo p{
+    color: var(--color-fondo2);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-slogan p{
+    color: var(--texto-secundario);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer-input p{
+    font-size: 1.2rem;
+    color: var(--color-fondo2);
+}
+
+.footer-input .input-firma{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-input .input-firma input{
+    padding: 8px;
+    width: 100%;
+    border: 2px solid #7487a0;
+    border-radius: 10px;
+    background-color: #000000;
+    color: var(--texto-secundario);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.footer-input .input-firma input:focus{
+    border-color: var(--color-acento);
+}
+
+.input-firma .input-button{
+    padding: 8px;
+    background-color: var(--color-acento);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--color-fondo2);
+}
+
+.footer-links p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-fondo2);
+    margin-bottom: 8px;
+}
+
+.footer-links li{
+    display: block;
+    color: var(--texto-secundario);
+    margin-bottom: 10px;
+}
+
+.footer-links li:hover{
+    color: var(--color-fondo2);
+}
+
+.footer-redes button{
+    border: none;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-redes button .bi{
+    color: var(--color-fondo2);
+    font-size: 1rem;
 }
 
 /*VERSION DESKTOP*/
