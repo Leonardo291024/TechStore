@@ -402,7 +402,118 @@ main{
     background-color: var(--color-hover);
 }
 
+/*LANZAMIENTOS / OFERTAS*/
 
+.lanzamientos-ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 20px;
+    background-color: var(--color-fondo2);
+}
+
+.lanzamientos{
+    background-color: var(--color-fondo);
+}
+
+.ofertas{
+    background-color: var(--color-superficie);
+}
+
+.lanzamientos, .ofertas{
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 520px;
+}
+
+.lanzamiento-div1 .lanzamiento-title, .oferta-div1 .oferta-title{
+    font-family: "Geist", sans-serif;
+    color: var(--color-acento);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.lanzamiento-div1 .lanzamiento-title2, .oferta-div1 .oferta-title2{
+    font-family: "Geist", sans-serif;
+    color: var(--color-fondo2);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.oferta-div1 .oferta-title2{
+    color: var(--color-fondo);
+}
+
+.lanzamiento-div1 .lanzamiento-slogan, .oferta-div1 .oferta-slogan{
+    color: var(--texto-secundario);
+    font-size: 1.2rem;
+}
+
+.lanzamiento-div2, .oferta-div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.lanzamiento-div2 img, .oferta-div2 img{
+    max-width: 50%;
+    height: 50%;
+}
+
+.lanzamiento-div2 button, .oferta-div2 button{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 40px 8px 40px;  
+    border: none;
+    border-radius: 50px;
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.oferta-div2 button{
+    background-color: var(--color-acento);
+    color: var(--color-fondo2);
+}
+
+/*GARANTIAS*/
+.container-garantias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: rgb(240, 240, 240);
+    padding: 40px;
+}
+
+.container-garantias .garantia{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container-garantias .garantia .bi-truck, .bi-shield-check, .bi-credit-card, .bi-headset{
+    color: var(--color-acento);
+    background-color: var(--color-superficie);
+    padding: 5px 10px 5px;
+    border-radius: 8px;
+    font-size: 2rem;
+}
+
+.container-garantias .garantia div p:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container-garantias .garantia div p:nth-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--texto-secundario);
+}
 
 /*VERSION DESKTOP*/
 
